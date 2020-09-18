@@ -1,5 +1,5 @@
-#기본 import 
 import discord
+import os
 
 
 import os
@@ -25,5 +25,5 @@ async def on_message(message):
         os.remove("0.png")
 
         
-
-client.run("NzU1NTgxMTQ0NDEzNjM0NTcy.X2FXxg.6U0UtxkdVVLnBZHVv34TqK6G2Hc")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
